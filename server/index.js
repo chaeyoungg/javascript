@@ -1,11 +1,24 @@
-const server = require('live-server');
+// const server = require('live-server');
 
-const params = {
-    host:'localhost',
-    port:3000,
-    open:false,
-    root:'./client'
+// const params = {
+//     host:'localhost',
+//     port:3000,
+//     open:false,
+//     root:'./client'
+// }
+
+// server.start(params);
+
+console.log(global);
+
+
+
+// 반복문
+for() {
+    console.log();
 }
 
-
-server.start(params);
+// 조건문
+if() {
+    console.log();
+}
