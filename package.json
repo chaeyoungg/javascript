@@ -3,10 +3,13 @@
     "live-server": "^1.2.2"
   },
   "scripts": {
-    "dev": "live-server client --host=localhost --port=5500 --no-browser"
+    "dev": "live-server client --host=localhost --port=5500 --no-browser",
+    "server": "json-server server/data/data.json",
+    "all": "run-p dev server"
   },
   "devDependencies": {
     "eslint": "^8.56.0",
+    "json-server": "^0.17.4",
     "prettier": "^3.2.4"
   }
 }
