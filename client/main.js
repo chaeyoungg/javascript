@@ -127,7 +127,7 @@ const handleDone = (e) => {
   const email = $('#emailField').value
   const website = $('#siteField').value
 
-  const users = {
+  const users = { //users의 값들이 들어가있는 객체! 
     name,
     email,
     website

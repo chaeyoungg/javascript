@@ -37,8 +37,8 @@ export function xhr({
   xhr.addEventListener("readystatechange", () => {
     const { readyState, status, response } = xhr;
 
-    if (readyState === 4) {
-      if (status >= 200 && status < 400) {
+    if (readyState === 4) { //데이터를 전부 받은 상태를 뜻하는 readyStete = 4
+      if (status >= 200 && status < 400) { //200이면 ok, 400 이상부터는 오류를 뜻한다. 
         onSuccess(JSON.parse(response));
       } else {
         onFail({ message: "에러가 발생했습니다!" });
